@@ -1,5 +1,5 @@
 <template>
-  <div class="luckymoney"></div>
+  <div class="luckyeveryday"></div>
 </template>
 
 <script setup></script>
