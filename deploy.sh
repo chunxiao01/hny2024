@@ -10,7 +10,7 @@ cd dist
 # 如果你要部署到自定义域名
 # echo 'www.example.com' > CNAME
 
-git init
+git init -b main
 git add -A
 git commit -m 'deploy'
 
@@ -19,7 +19,6 @@ git commit -m 'deploy'
 
 # 如果你要部署在 https://<USERNAME>.github.io/<REPO>
 git push -f git@github.com:chunxiao01/hny2024.git main:gh-pages
-
 cd -
 
 

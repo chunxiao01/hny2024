@@ -5,11 +5,11 @@
 </template>
 
 <script setup>
-import LuckyWords from "../components/LuckyWords.vue"
-import Star from "../components/Star.vue"
+import LuckyWords from "@/components/LuckyWords.vue"
+import Star from "@/components/Star.vue"
 
-import { forceLandscape } from "../assets/js/forceLandscape.js"
-import { flexible } from "../assets/js/flexiable.js"
+import { forceLandscape } from "@/assets/js/forceLandscape.js"
+import { flexible } from "@/assets/js/flexiable.js"
 
 forceLandscape()
 flexible({
