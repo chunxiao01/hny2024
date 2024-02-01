@@ -5,7 +5,7 @@
   --vp-c-brand-dark: #008269;
   --vp-c-brand-darker: #005d47;
   --vp-c-brand-next: #009ff7;
-  animation: rainbow 30s linear infinite;
+  animation: rainbow 10s linear infinite;
 }
 
 * {
@@ -26,9 +26,36 @@
   src: local("Apple Color Emoji"), local("Segoe UI Emoji"),
     local("Segoe UI Symbol"), local("Noto Color Emoji");
 }
+
+@font-face {
+  font-family: "flbs";
+  src: url("../font/flbs.ttf");
+}
+
 #app {
   width: 100vw;
   height: 100vh;
+  background: linear-gradient(
+    rgb(157, 48, 42) 0%,
+    rgba(157, 48, 42, 0.8) 175.5%
+  );
+  /* background: #f03752;
+  background: -webkit-linear-gradient(
+    to right,
+    #de5851,
+    #dd3027,
+    #e62217,
+    #f00e02,
+    #e10e02
+  );
+  background: linear-gradient(
+    to right,
+    #de5851,
+    #dd3027,
+    #e62217,
+    #f00e02,
+    #e10e02
+  ); */
 }
 
 @keyframes rainbow {
