@@ -255,7 +255,7 @@ const musicstatus = ref(false)
 const musicplayer = ref(null)
 function playMusic() {
   if (!musicstatus.value) {
-    musicplayer.value.volume = 0.365
+    musicplayer.value.volume = 0.5
     musicplayer.value.play()
     musicstatus.value = true
   } else {
