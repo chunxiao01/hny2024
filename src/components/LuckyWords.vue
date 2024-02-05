@@ -1,7 +1,7 @@
 <template>
   <div class="lucky-words">
     <div class="lucky-word-contanier">
-      <div class="lucky-word-contanier1">
+      <div class="lucky-word-contanier-item lucky-word-contanier1">
         <div class="lucky-word-text lucky-word-text1">
           <svg
             xmlns:dc="http://purl.org/dc/elements/1.1/"
@@ -95,7 +95,7 @@
           </svg>
         </div>
       </div>
-      <div class="lucky-word-contanier2">
+      <div class="lucky-word-contanier-item lucky-word-contanier2">
         <div class="lucky-word-text lucky-word-text1">
           <svg
             xmlns:dc="http://purl.org/dc/elements/1.1/"
@@ -189,7 +189,7 @@
           </svg>
         </div>
       </div>
-      <div class="lucky-word-contanier3">
+      <div class="lucky-word-contanier-item lucky-word-contanier3">
         <div class="lucky-word-text lucky-word-text1">
           <svg
             xmlns:dc="http://purl.org/dc/elements/1.1/"
@@ -283,7 +283,7 @@
           </svg>
         </div>
       </div>
-      <div class="lucky-word-contanier4">
+      <div class="lucky-word-contanier-item lucky-word-contanier4">
         <div class="lucky-word-text lucky-word-text1">
           <svg
             xmlns:dc="http://purl.org/dc/elements/1.1/"
@@ -377,10 +377,10 @@
           </svg>
         </div>
       </div>
-      <!-- <div class="lucky-word-text">新年快樂</div>
-      <div class="lucky-word-text">平安喜樂</div>
-      <div class="lucky-word-text">龍年大吉</div>
-      <div class="lucky-word-text">萬事勝意</div> -->
+      <!-- <div class="lucky-word-contanier-item">新年快樂</div>
+      <div class="lucky-word-contanier-item">平安喜樂</div>
+      <div class="lucky-word-contanier-item">龍年大吉</div>
+      <div class="lucky-word-contanier-item">萬事勝意</div> -->
     </div>
   </div>
 </template>
@@ -408,7 +408,7 @@
   background-size: cover;
   background-clip: text;
 } */
-.lucky-word-text {
+.lucky-word-contanier-item {
   text-align: center;
   /* font-family: "an"; */
   font-family: system-ui, -apple-system, BlinkMacSystemFont, PingFang SC,
@@ -489,5 +489,51 @@
 
 .lucky-word-text4 {
   top: 52%;
+}
+
+.lucky-word-contanier {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  filter: contrast(15);
+}
+
+.lucky-word-contanier-item {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  animation: change 8s infinite ease-in-out;
+}
+
+.lucky-word-contanier-item:nth-child(1) {
+  animation-delay: -8s;
+}
+
+.lucky-word-contanier-item:nth-child(2) {
+  animation-delay: -6.4s;
+}
+
+.lucky-word-contanier-item:nth-child(3) {
+  animation-delay: -4.8s;
+}
+
+.lucky-word-contanier-item:nth-child(4) {
+  animation-delay: -3.2s;
+}
+
+@keyframes change {
+  0%,
+  5%,
+  100% {
+    filter: blur(0px);
+    opacity: 1;
+  }
+  50%,
+  80% {
+    filter: blur(30px);
+    opacity: 0;
+  }
 }
 </style>
